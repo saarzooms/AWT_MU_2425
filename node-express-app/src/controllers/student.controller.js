@@ -10,7 +10,7 @@ exports.create = (req, res, next) => {
     )
     .catch(next);
 };
-exports.findAll = (req, res, next) => {
+exports.fetchAll = (req, res, next) => {
   student_service
     .fetchAll()
     .then((response) =>
