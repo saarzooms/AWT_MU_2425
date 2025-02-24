@@ -29,5 +29,8 @@ async function initialize() {
   });
 
   db.Student = require("../models/student.model")(sequelize);
+  db.Course = require("../models/course.model")(sequelize);
+  db.Course.hasMany(db.Student);
+  db.Student.belongsTo(db.Course);
   await sequelize.sync({ alter: true });
 }
