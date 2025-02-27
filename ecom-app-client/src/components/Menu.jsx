@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
     <div>
-      <a href="/home">Home</a>&nbsp;
-      <a href="/aboutus">About us</a>&nbsp;
-      <a href="/proddetails">Product</a>
+      <Link to="/login">Login</Link>&nbsp;
+      <Link to="/home">Home</Link>&nbsp;
+      <Link to="/aboutus">About us</Link>&nbsp;
+      <Link to="/proddetails">Product</Link>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Menu from "./Menu";
 const Aboutus = () => {
   return (
     <div>
-      <Menu />
+      {/* <Menu /> */}
       Aboutus
     </div>
   );
